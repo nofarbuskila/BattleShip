@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/change_turn_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="Player 1 manage your board"
+        android:textSize="25sp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/ready_btn_dialog"
+        android:text="@string/ready_btn"
+        style="@style/placingPage_btn"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/random_btn"/>
+
+</LinearLayout>

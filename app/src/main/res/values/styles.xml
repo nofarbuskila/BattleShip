@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="firstPage_btn">
+        <item name="android:layout_width">190dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:fontFamily">@font/audiowide</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="firstPageSmall_btn">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="menu_btn">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="numOfPlayersDialog_btn">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:fontFamily">@font/audiowide</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="placingPage_btn">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:fontFamily">@font/audiowide</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="records_text_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:fontFamily">@font/audiowide</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tutorial_style">
+        <item name="android:fontFamily">@font/audiowide</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="image_tutorial">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/btn</item>
+    </style>
+
+    <style name="image_placing_ships">
+        <item name="android:layout_width">27dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:src">@drawable/btn</item>
+    </style>
+
+    <style name="GridLayout_table">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/table_btn</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

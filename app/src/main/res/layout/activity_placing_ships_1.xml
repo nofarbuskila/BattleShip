@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/final_bg1"
+    tools:context=".PlacingShipsActivity1"
+    android:id="@+id/placing_layout"
+    android:layoutDirection="ltr">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/placing_ships_menu"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fleet_txt"
+        android:textColor="#fff"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_below="@id/toolbar"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/fleet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/board_gl"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/ship_1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ship2_white"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/ship_2"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ship3_white"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/ship_3"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ship3_white"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/ship_4"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ship4_white"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/ship_5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ship5_white"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/random_btn"
+        android:text="@string/generate_btn"
+        style="@style/placingPage_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/board_gl"
+        android:layout_marginTop="30dp"/>
+
+    <GridLayout
+        android:id="@+id/board_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="10"
+        android:rowCount="10"
+        android:layout_below="@id/section_label"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorBlack"
+        android:layout_centerInParent="true">
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/ready_btn"
+        android:text="@string/ready_btn"
+        style="@style/placingPage_btn"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/random_btn"/>
+
+</RelativeLayout>

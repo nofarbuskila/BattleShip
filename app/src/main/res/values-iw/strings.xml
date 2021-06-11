@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">צוללות</string>
+
+    <string name="play_btn">שחק</string>
+
+    <!--main page-->
+    <string name="note_dialog">לעדכון או עריכה לחץ על התמונה</string>
+    <string name="title_dialog">ערוך את הפרופיל שלך</string>
+    <string name="hint_dialog">הכנס את שמך</string>
+
+    <!--game page-->
+    <string name="score_txt">ניקוד:</string>
+    <string name="time_txt">זמן:</string>
+    <string name="your_turn_txt">תורך</string>
+    <string name="computer_turn_txt">תור המחשב</string>
+
+    <!--fragment-->
+    <string name="msg_title">יציאה מהמשחק</string>
+    <string name="msg_txt">האם אתה בטוח שברצונך לצאת מהמשחק?</string>
+    <string name="msg_positive_btn">כן</string>
+    <string name="msg_negative_btn">לא</string>
+
+
+    <!--placing ships page-->
+    <string name="fleet_txt">נהל את הלוח שלך</string>
+    <string name="generate_btn">יצירת לוח</string>
+    <string name="ready_btn">מוכן</string>
+
+    <!--Changing turn dialog-->
+    <string name="manage_board_p1">שחקן 1 נהל את הלוח שלך</string>
+    <string name="manage_board_p2">שחקן 2 נהל את הלוח שלך</string>
+    <string name="p1_turn">תור שחקן 1</string>
+    <string name="p2_turn">תור שחקן 2</string>
+
+    <!--setting page-->
+    <string name="user_txt">שם משתמש:</string>
+    <string name="sound_txt">שמע</string>
+    <string name="music_txt">מוסיקת רקע</string>
+    <string name="vibrate_txt">רטט</string>
+
+    <!--Tutorial page-->
+    <string name="tab_text">ברוכים הבאים</string>
+    <string name="tab_text_1">ספינות</string>
+    <string name="tab_text_2">לוח</string>
+    <string name="tab_text_3">משחק</string>
+
+        <!--tab 1-->
+    <string name="welcome_tab_1">"ברוכים הבאים למדריך צוללות!!"</string>
+    <string name="welcome_tab_2">"להמשך המדריך החלק שמאלה."</string>
+    <string name="welcome_tab_3">"או בחר את הלשונית הרלוונטית."</string>
+
+        <!--tab 2-->
+    <string name="ships_tab">"לכל שחקן יש 5 ספינות למקם על לוח המשחק שלו."</string>
+
+        <!--tab 3-->
+    <string name="board_tab_1">"בחר כיצד הספינות שלך ימוקמו על הלוח."</string>
+    <string name="board_tab_2">"אתה יכול לשנות זאת בלחיצה על כפתור 'יצירת לוח'"</string>
+    <string name="board_tab_3">"לסיום לחץ על כפתור 'מוכן'"</string>
+
+        <!--tab 4-->
+    <string name="game_tab_1">"המטרה שלך? להטביע את ספינות האויב."</string>
+    <string name="game_tab_11">"איך? לחץ על אריח שאתה רוצה לירות עליו."</string>
+    <string name="game_tab_2">"פגיעה"</string>
+    <string name="game_tab_3">"החטאה"</string>
+    <string name="game_tab_4">"פגעת בספינה כולה? מדהים!"</string>
+    <string name="game_tab_41">"תמונה של הספינה השרופה תתגלה על הלוח."</string>
+    <string name="game_tab_5">"ספינה שרופה "</string>
+
+    <!--Record page-->
+    <string name="name_tv">שם</string>
+    <string name="time_tv">זמן</string>
+    <string name="score_tv">ניקוד</string>
+
+    <!--win dialog-->
+    <string name="win_txt">המנצח הוא</string>
+
+    <!--menu-->
+    <string name="main_menu">דף הבית</string>
+    <string name="music_menu">מוסיקה</string>
+    <string name="sound_menu">שמע</string>
+    <string name="vibration_menu">רטט</string>
+
+    <string name="open_menu">open</string>
+    <string name="close_menu">open</string>
+    
+</resources>

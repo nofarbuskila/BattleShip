@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/final_bg1"
+    tools:context=".SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/setting_menu"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layoutDirection="locale"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:src="@drawable/camera_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar"/>
+
+    <Button
+        android:id="@+id/edit_profile_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_btn"
+        android:layout_above="@id/profile_tv"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <!--username-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/frame_bg"
+        android:layout_below="@id/profile_img"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/profile_tv_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/user_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlue4"
+        android:layout_below="@id/profile_img" />
+
+    <TextView
+        android:id="@+id/profile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/user_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/profile_img"/>
+
+    <TextView
+        android:id="@+id/profile_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_alignBaseline="@id/profile_tv"
+        android:layout_toEndOf="@id/profile_tv"/>
+
+    <!--music-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/frame_bg"
+        android:layout_below="@id/profile_tv"/>
+
+    <TextView
+        android:id="@+id/music_tv_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/music_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlue4"
+        android:layout_below="@id/profile_tv"/>
+
+    <TextView
+        android:id="@+id/music_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/music_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/profile_tv" />
+
+    <Switch
+        android:id="@+id/music_switch"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/profile_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
+
+    <!--sound-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/frame_bg"
+        android:layout_below="@id/music_tv"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/sound_tv_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/sound_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlue4"
+        android:layout_below="@id/music_tv"/>
+
+    <TextView
+        android:id="@+id/sound_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/sound_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/music_tv" />
+
+    <Switch
+        android:id="@+id/sound_switch"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/music_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
+
+    <!--vibrate-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/sound_tv"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/frame_bg" />
+
+    <TextView
+        android:id="@+id/vibrate_tv_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/vibrate_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlue4"
+        android:layout_below="@id/sound_tv"/>
+
+    <TextView
+        android:id="@+id/vibrate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/vibrate_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/sound_tv" />
+
+    <Switch
+        android:id="@+id/vibrate_switch"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/sound_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
+
+</RelativeLayout>

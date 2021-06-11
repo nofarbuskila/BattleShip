@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">WORLD OF WARSHIP</string>
+
+    <string name="play_btn">PLAY</string>
+
+
+    <!--main page-->
+    <string name="note_dialog">To Set or Update your image press on image</string>
+    <string name="title_dialog">Set Your Profile</string>
+    <string name="hint_dialog">Enter your name</string>
+
+    <!--game page-->
+    <string name="score_txt">score:</string>
+    <string name="time_txt">timer:</string>
+    <string name="your_turn_txt">YOUR TURN</string>
+    <string name="computer_turn_txt">COMPUTER TURN</string>
+
+    <!--fragment-->
+    <string name="msg_title">Quit Game</string>
+    <string name="msg_txt">Are you sure you want to quit the game?</string>
+    <string name="msg_positive_btn">Yes</string>
+    <string name="msg_negative_btn">No</string>
+
+    <!--placing ships page-->
+    <string name="fleet_txt">MANAGE YOUR BOARD</string>
+    <string name="generate_btn">GENERATE BOARD</string>
+    <string name="ready_btn">READY</string>
+
+    <!--Changing turn dialog-->
+    <string name="manage_board_p1">Player 1 manage your board</string>
+    <string name="manage_board_p2">Player 2 manage your board</string>
+    <string name="p1_turn">Player 1 turn</string>
+    <string name="p2_turn">Player 2 turn</string>
+
+
+    <!--setting page-->
+    <string name="user_txt">USERNAME:</string>
+    <string name="sound_txt">SOUND</string>
+    <string name="music_txt">MUSIC</string>
+    <string name="vibrate_txt">VIBRATING</string>
+
+
+    <!--Tutorial page-->
+    <string name="tab_text">WELCOME</string>
+    <string name="tab_text_1">SHIPS</string>
+    <string name="tab_text_2">BOARD</string>
+    <string name="tab_text_3">GAME</string>
+
+    <!--tab 1-->
+    <string name="welcome_tab_1">"Welcome to \nWORLD OF WARSHIP \ntutorial!"</string>
+    <string name="welcome_tab_2">"To continue to the tutorial swipe left."</string>
+    <string name="welcome_tab_3">"or choose the relevant tab above."</string>
+
+    <!--tab 2-->
+    <string name="ships_tab">"Each player has 5 ships to place on his board."</string>
+
+    <!--tab 3-->
+    <string name="board_tab_1">Choose how you want your ships will be Placed.</string>
+    <string name="board_tab_2">"You can change it by pressing the 'GENERATE BOARD' button</string>
+    <string name="board_tab_3">"When you finish, press the 'READY' button</string>
+
+    <!--tab 4-->
+    <string name="game_tab_1">"Your goal? Sink the enemy ships."</string>
+    <string name="game_tab_11">"How? Tap on a field you like to shoot at."</string>
+    <string name="game_tab_2">"Hit"</string>
+    <string name="game_tab_3">"Miss"</string>
+    <string name="game_tab_4">"Hit the entire ship? awesome!"</string>
+    <string name="game_tab_41">"The picture of the burning ship will be revealed on the board."</string>
+    <string name="game_tab_5">"Burning ship "</string>
+
+    <!--Record page-->
+    <string name="name_tv">NAME</string>
+    <string name="time_tv">TIME</string>
+    <string name="score_tv">SCORE</string>
+
+    <!--win dialog-->
+    <string name="win_txt">THE WINNER IS</string>
+
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section:</string>
+
+    <!--menu-->
+    <string name="main_menu">Home Page</string>
+    <string name="music_menu">Music</string>
+    <string name="sound_menu">Sound</string>
+    <string name="vibration_menu">Vibrating</string>
+
+    <string name="open_menu">open</string>
+    <string name="close_menu">open</string>
+
+</resources>

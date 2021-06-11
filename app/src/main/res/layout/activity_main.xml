@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lightning"/>
+
+    <!--<pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/giphy2"/>-->
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/battleship_banner2"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/tutorial_btn"
+        style="@style/firstPageSmall_btn"
+        android:background="@drawable/tutorial_button"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="60dp"/>
+
+    <Button
+        android:id="@+id/records_btn"
+        style="@style/firstPageSmall_btn"
+        android:background="@drawable/trophy_button"
+        android:layout_below="@id/play_btn"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/settings_btn"
+        style="@style/firstPageSmall_btn"
+        android:background="@drawable/setting_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="60dp"/>
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/grey_circle"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#fff"
+        android:layout_marginTop="380dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/play_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</RelativeLayout>

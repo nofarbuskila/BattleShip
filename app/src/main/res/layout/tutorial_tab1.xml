@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialActivity">
+    
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        style="@style/tutorial_style"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome_tab_1"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/battleship_banner2"
+        android:layout_below="@id/section_label"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/section_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        style="@style/tutorial_style"
+        android:gravity="center"
+        android:text="@string/welcome_tab_2"/>
+
+    <ImageView
+        android:id="@+id/gif_swipe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/swipe_l_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@id/section_label2"/>
+
+    <TextView
+        android:id="@+id/section_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@id/gif_swipe"
+        style="@style/tutorial_style"
+        android:gravity="center"
+        android:text="@string/welcome_tab_3"/>
+
+
+</RelativeLayout>

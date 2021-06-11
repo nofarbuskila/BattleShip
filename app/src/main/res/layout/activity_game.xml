@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/final_bg1"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/game_menu"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layoutDirection="locale"/>
+
+    <!--player one game-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="5dp"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:background="@drawable/sea2"
+                android:layout_margin="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+            </pl.droidsonroids.gif.GifImageView>
+
+            <GridLayout
+                android:id="@+id/player_one_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+            </GridLayout>
+
+        </RelativeLayout>
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:id="@+id/flip_layout"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/score_timer_frame"
+            android:layout_marginTop="5dp"
+            app:flipDuration="500"
+            app:flipEnabled="true">
+
+            <TextView
+                android:id="@+id/computer_turn_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:fontFamily="@font/audiowide"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/player_turn_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_turn_txt"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:fontFamily="@font/audiowide"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+        <RelativeLayout
+            android:id="@+id/computerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <!--fleet-->
+            <LinearLayout
+                android:id="@+id/fleet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@id/big_board_gif"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ship_1"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ship2_white"
+                    android:layout_margin="3dp"/>
+                <ImageView
+                    android:id="@+id/ship_2"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ship3_white"
+                    android:layout_margin="3dp"/>
+                <ImageView
+                    android:id="@+id/ship_3"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ship3_white"
+                    android:layout_margin="3dp"/>
+                <ImageView
+                    android:id="@+id/ship_4"
+                    android:layout_width="70dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/ship4_white"
+                    android:layout_margin="3dp"/>
+                <ImageView
+                    android:id="@+id/ship_5"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ship5_white"
+                    android:layout_margin="3dp"/>
+
+            </LinearLayout>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/big_board_gif"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/sea2"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+            </pl.droidsonroids.gif.GifImageView>
+
+            <GridLayout
+                android:id="@+id/player_one_enemy_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--score and timer layout-->
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="133dp"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/score_timer_frame"
+        android:layout_below="@id/toolbar"
+        android:layoutDirection="locale">
+
+        <TextView
+            android:id="@+id/score_title_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_txt"
+            android:textColor="@color/colorBlue4"
+            android:textSize="24sp"
+            android:fontFamily="@font/audiowide"
+            android:textStyle="bold"
+            android:layout_margin="18dp"/>
+
+        <TextView
+            android:id="@+id/score_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_txt"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:fontFamily="@font/audiowide"
+            android:textStyle="bold"
+            android:layout_margin="16dp"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="175dp"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite1"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:fontFamily="@font/audiowide"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/score_title"
+            android:layout_alignBaseline="@id/score_title"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/timer_title_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_txt"
+            android:textColor="@color/colorBlue4"
+            android:textSize="24sp"
+            android:fontFamily="@font/audiowide"
+            android:textStyle="bold"
+            android:layout_below="@id/view_line"
+            android:layout_margin="18dp"/>
+
+        <TextView
+            android:id="@+id/timer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_txt"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:fontFamily="@font/audiowide"
+            android:textStyle="bold"
+            android:layout_below="@id/view_line"
+            android:layout_margin="16dp"/>
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/score"
+            android:layout_toEndOf="@id/timer_title"
+            android:layout_alignBaseline="@id/timer_title"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
